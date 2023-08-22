@@ -1,0 +1,106 @@
+import java.util.*;
+ class Student{
+    int marks;
+    void grade(int m){
+        if(m>=3 && m<=5){
+            System.out.println("poor");
+        }
+        if(m>=6&&m<=7){
+            System.out.println("Good");
+        }
+        if(m>=8&&m<=9){
+            System.out.println("Very good");
+        }
+       
+    }
+}
+public class JavaApplication2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("Enter marks: ");
+        Scanner m  = new Scanner(System.in);
+        int mark = m.nextInt();
+        Student s = new Student();
+        s.grade(mark);
+    }
+   
+}
+
+
+
+
+// sum integers div by 7 btwn 100 to 700
+package javaapplication3;
+
+/**
+ *
+ * @author admin
+ */
+import java.util.*;
+class integer{
+    void divbyseven(){
+        int sum = 0;
+        for(int i=100; i<700;i++ ){
+            if(i%7==0){
+                sum = sum+i;
+            }
+    }
+        System.out.println(sum);
+    }
+}
+public class JavaApplication3 {
+    public static void main(String[] args) {
+        integer s = new integer();
+        s.divbyseven();
+    }
+   
+}
+
+
+
+
+//Swap
+public class Swap {
+
+    public static void main(String[] args) {
+
+        float first = 12.0f, second = 24.5f;
+
+        System.out.println("--Before swap--");
+        System.out.println("First number = " + first);
+        System.out.println("Second number = " + second);
+
+        first = first - second;
+        second = first + second;
+        first = second - first;
+
+        System.out.println("--After swap--");
+        System.out.println("First number = " + first);
+        System.out.println("Second number = " + second);
+    }
+}
+
+
+
+
+
+//pattern
+class Main {
+public static void main(String args[]) {
+int n = 5;
+//Loop to iterate over each row
+for(int i=1;i<=n;i++){
+//Loop to iterate over each column of the ith row
+for(int j=1;j<=i;j++){
+System.out.print(i+ " ");
+}
+System.out.println();
+}
+}
+       
+   
+  
+
